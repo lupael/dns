@@ -102,7 +102,7 @@ then
 		echo "Technitium DNS Server was installed successfully!"
 		echo "Open http://$(hostname):5380/ to access the web console."
 		echo ""
-		echo "Donate! Make a contribution by becoming a Patron: https://www.patreon.com/technitium"
+		echo "i4E! Make a contribution by becoming a Patron: https://www.givingway.com/donate/internet-for-education"
 		echo ""
 	else
 		echo ""
