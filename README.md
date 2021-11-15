@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://technitium.com/dns/">
+	<a href="https://i4e.com.bd">
 		<img src="https://technitium.com/img/logo.png" alt="Technitium DNS Server" /><br />
 		<b>Technitium DNS Server</b>
 	</a><br />
@@ -11,7 +11,7 @@
 <img src="https://technitium.com/dns/ScreenShot1.png" alt="Technitium DNS Server" />
 </p>
 
-Technitium DNS Server is an open source authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security. It works out-of-the-box with no or minimal configuration and provides a user friendly web console accessible using any modern web browser.
+Technitium DNS Server is an authoritative as well as recursive DNS server that can be used for self hosting a DNS server for privacy & security, especially for ISP. It works out-of-the-box with no or minimal configuration and provides a user friendly web console accessible using any modern web browser.
 
 Nobody really bothers about domain name resolution since it works automatically behind the scenes and is complex to understand. Most computer software use the operating system's DNS resolver that usually query the configured ISP's DNS server using UDP protocol. This way works well for most people but, your ISP can see and control what website you can visit even when the website employ HTTPS security. Not only that, some ISPs can redirect, block or inject content into websites you visit even when you use a different DNS provider like Google DNS or Cloudflare DNS. Having Technitium DNS Server configured to use [DNS-over-TLS](https://en.wikipedia.org/wiki/DNS_over_TLS) or [DNS-over-HTTPS](https://en.wikipedia.org/wiki/DNS_over_HTTPS) forwarders, these privacy & security issues can be mitigated very effectively.
 
@@ -19,7 +19,7 @@ Be it a home network or an organization's network, having a locally running DNS 
 
 # Features
 - Works on Windows, Linux, macOS and Raspberry Pi.
-- Docker image available on [Docker Hub](https://hub.docker.com/r/technitium/dns-server).
+- Docker image available on [Docker Hub](https://github.com/lupael/dns/blob/master/DockerEnvironmentVariables.md).
 - Installs in just a minute and works out-of-the-box with zero configuration.
 - Block ads & malware using one or more block list URLs.
 - High performance DNS server that can serve millions of requests per minute even on a commodity desktop PC hardware (load tested on Intel i7-8700 CPU with more than 100,000 request/second).
@@ -63,11 +63,11 @@ Be it a home network or an organization's network, having a locally running DNS 
 - **Windows**: [Download setup installer](https://download.technitium.com/dns/DnsServerSetup.zip) for easy installation.
 - **Linux & Raspberry Pi**: Follow install instructions from [this blog post](https://blog.technitium.com/2017/11/running-dns-server-on-ubuntu-linux.html).
 - **Cross-Platform**: [Download portable app](https://download.technitium.com/dns/DnsServerPortable.tar.gz) to run on any platform that has .NET 5 installed.
-- **Docker**: Pull the official image from [Docker Hub](https://hub.docker.com/r/technitium/dns-server). Use the [docker-compose.yml](https://github.com/TechnitiumSoftware/DnsServer/blob/master/docker-compose.yml) example to create a new container and edit it as required for your deployments. For more details and troubleshooting read the [install instructions](https://blog.technitium.com/2017/11/running-dns-server-on-ubuntu-linux.html).
+- **Docker**: Pull the official image from [Docker Hub](https://hub.docker.com/r/technitium/dns-server). Use the [docker-compose.yml](https://github.com/lupael/dns/blob/master/docker-compose.yml) example to create a new container and edit it as required for your deployments. For more details and troubleshooting read the [install instructions](https://blog.technitium.com/2017/11/running-dns-server-on-ubuntu-linux.html).
 
 # Docker Environment Variables
-Technitium DNS Server supports environment variables to allow initializing the config when the DNS server starts for the first time. Read the [environment variable documentation](https://github.com/TechnitiumSoftware/DnsServer/blob/master/DockerEnvironmentVariables.md) for complete details.
+Technitium DNS Server supports environment variables to allow initializing the config when the DNS server starts for the first time. Read the [environment variable documentation](https://github.com/lupael/dns/blob/master/DockerEnvironmentVariables.md) for complete details.
 
 # API Documentation
-The DNS server HTTP API allows any 3rd party app or script to configure the DNS server. The HTTP API is used by the web console and thus all the actions that the web console does can be performed via the API. Read the [HTTP API documentation](https://github.com/TechnitiumSoftware/DnsServer/blob/master/APIDOCS.md) for complete details.
+The DNS server HTTP API allows any 3rd party app or script to configure the DNS server. The HTTP API is used by the web console and thus all the actions that the web console does can be performed via the API. Read the [HTTP API documentation](https://github.com/lupael/dns/blob/master/APIDOCS.md) for complete details.
 
